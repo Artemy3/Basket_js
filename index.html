@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/style/style.css">
+   <title>Market</title>
+</head>
+
+<body>
+
+   <div class="container">
+      <ul id="productList" class="card"></ul>
+
+      <button id="basket" class="basket" data-modal="1">Корзина</button>
+
+
+      <div id="myModal" class="modal">
+         <div class="modal-content">
+            <div class="modal-header">
+               <span class="close">&times;</span>
+               <h2>Корзина</h2>
+            </div>
+            <div class="modal-body" id="basketBody">
+            </div>
+         </div>
+      </div>
+
+
+      <div class="dropdown">
+         <button onclick="myFunction()" class="dropbtn"> Упорядочить товары</button>
+         <div id="myDropdown" class="dropdown-content">
+            <a href="#" id="btnClothes">clothes</a>
+            <a href="#" id="btnTechnic">technic</a>
+         </div>
+      </div>
+
+   </div>
+
+
+   <script src="/js/script.js"></script>
+</body>
+
+</html>
